@@ -6,6 +6,7 @@ import { CuttingPlane } from './components/CuttingPlane';
 import { Controls } from './components/Controls';
 import { useState } from 'react';
 import { Center, OrbitControls } from '@react-three/drei';
+import { Analytics } from "@vercel/analytics/react"
 
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
 
   return (
     <div className='main-cnt'>
+    <Analytics />
       <div className='landmark-controls'>
         <div className='item'>
             <span>Femur Center</span>
