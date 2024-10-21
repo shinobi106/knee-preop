@@ -11,3 +11,109 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.main-cnt{
+  /* background-color: red; */
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.canvas{
+  background-color: black;
+}
+
+
+/* landmark-controls */
+.landmark-controls{
+  position: absolute;
+  /* background-color: red; */
+  left: 5vw;
+  top: 5vw;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.landmark-controls .item{
+  color: white;
+  width: 100%;
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.rotation-controls{
+  position: absolute;
+  /* background-color: red; */
+  right: 5vw;
+  top: 5vw;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.rotation-controls .item{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotation-controls .item button{
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  min-width: 20px;
+}
+
+.rotation-controls .item .text{
+  color: white;
+}
+
+
+.rotation-controls .item .white{
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  min-width: 80px;
+  border-radius:15px;
+  padding: 5px 10px;
+}
+
+.rotation-controls .item .black{
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  min-width: 80px;
+  border-radius:15px;
+  padding: 5px 10px;
+}
+
+.landmark-controls .item .white{
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  min-width: 80px;
+  border-radius:15px;
+  padding: 5px 10px;
+}
+
+.landmark-controls .item .black{
+  cursor: pointer;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  min-width: 80px;
+  border-radius:15px;
+  padding: 5px 10px;
+}
