@@ -153,7 +153,7 @@ export function Landmarks(props) {
         <TransformControls
           ref={transformRefs.current[idx]}
           key={idx}
-          object={sphereRefs.current[idx]}
+          // object={sphereRefs.current[idx]}
           onMouseDown={props.disableOrbitControls}
           onMouseUp={props.enableOrbitControls}
         >
